@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment-1</title>
+	<style type="text/css">
+		table{
+			border: solid grey;
+			border-radius: 5px;
+			text-align: center;
+			margin: auto;
+			width:200px;
+			height:150px;
+			box-shadow: 4px 4px grey;
+		}
+		td{
+		    border: 2px solid white;
+			text-align: center;
+			background-color: grey;
+
+		
+		}
+		input[type="button"] {
+			background-color: grey;
+			text-align: center;
+			border: none;
+			height:50px;
+			width:45px;
+		}
+		 input[type="text"]
+         {
+         background-color:grey;
+         border: none;
+         width:210px;
+         height:50px;
+         font-size:30px;
+         }         
+         h1{
+         	text-align:center;
+         	padding-bottom: 30px; 
+         }
+		
+
+	</style>
+	<script type="text/javascript">
+		 function calc(val)
+         {
+             document.getElementById("result").value+=val
+             
+         }
+          function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+
+         }
+           function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+
+
+
+	</script>
+</head>
+<body>
+	<header>
+		<h1>A SIMPLE CALCULATOR PROGRAM</h1>
+	<table> 
+		<tr>
+			<th colspan="4"><input type="text" id="result"></th>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" id="1" onclick="calc(this.id)"></td>
+			<td><input type="button" value="2" id="2" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="3" id="3" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="/" id="/" onclick="calc(this.id)"> </td>
+		</tr>
+		<tr>
+		    <td><input type="button" value="4" id="4" onclick="calc(this.id)"></td>
+			<td><input type="button" value="5" id="5" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="6" id="6" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="*" id="*" onclick="calc(this.id)"> </td>
+		</tr>
+		<tr>
+		    <td><input type="button" value="7" id="7" onclick="calc(this.id)"></td>
+			<td><input type="button" value="8" id="8" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="9" id="9" onclick="calc(this.id)"> </td>
+			<td><input type="button" value="-" id="-"  onclick="calc(this.id)"> </td>
+		</tr>
+		<tr>
+		    <td><input type="button" value="C" id=" " onclick="clr(this.id)"></td>
+			<td><input type="button" value="0" id="0"onclick="calc(this.id)"> </td>
+			<td><input type="button" value="=" id="result" onclick="solve(this.id)"> </td>
+			<td><input type="button" value="+" id="+" onclick="calc(this.id)"> </td>
+		</tr>
+	 </header>
+    </table>
+  </body>
+</html>
