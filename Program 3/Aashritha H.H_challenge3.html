@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>challenge 3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<style>
+		.reviews{
+			color:orange;
+		}
+		.star{
+			color:white;
+		}
+		body{
+			background:black;
+			color:white;
+		}
+		.img{
+			float:left;
+			background:black;
+		}
+		h2{
+			color:white;
+			font-family:Georgia,serif;
+			font-style:italic;
+		}
+
+		.topnav {
+			background:lightgrey; 
+			overflow: hidden;
+		}
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.topnav a:hover {
+			background-color:royalblue;
+			color: black;
+		}
+		@media screen and (max-width: 500px) {
+			.navbar a {
+				float: none;
+				display: block;
+			}
+		}
+		#para1 {
+			position:absolute;
+			float:right;
+			right:30%;
+			top:40%;
+			transform: translate(-50%, -50%);
+		}
+		#stars {
+			width:2px;
+			height:2px;
+		}
+	</style>
+</head>
+<header>
+	<div class="topnav">
+		<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+		<a href="#"><i class="fa fa-fw fa-dedent"></i> About</a>
+		<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+		<a href="#"><i class="fa fa-fw fa-briefcase"></i> Portfolio</a>
+		<a href="#"><i class="fa fa-fw fa-file-photo-o"></i> Client album</a>
+	</div>
+
+
+</header>
+<body>
+	<h2>Photography</h2>
+	<img src="photo3.png" alt="Photography image" width="600" height="350">
+	<p> Captured by <a href="Aashritha H.H">Aashritha H.H</a></p>
+	
+	<article>
+		<p>Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.<br>
+		Typically, a lens is used to focus the light reflected or emitted from objects into a real image on the light-sensitive surface inside a camera during a timed exposure. With an electronic image sensor, this produces an electrical charge at each pixel, which is electronically processed and stored in a digital image file for subsequent display or processing</p>
+	</article>
+	<section>
+		<p>Date:27/02/2000<br>Time:9:00</p>
+	</section>
+
+	<p id="para1"></p>
+	<div id="#para1">
+		<script> 
+			var var1 = setInterval(inTimer, 500);
+			var fs = 4; 
+			var ids = document.getElementById("para1");
+			function inTimer()
+			{
+				ids.innerHTML = 'Photo Grid';
+				ids.setAttribute('style', "font-size: " + fs + "px; color:orange");
+				fs += 4;
+				if (fs >= 40)
+				{
+					clearInterval(var1); 
+					var2 = setInterval(deTimer, 400);
+
+				}
+			}
+			function deTimer() 
+			{
+				fs -= 4;
+				ids.innerHTML = 'Photo Grid';
+				ids.setAttribute('style', "font-size: " + fs + "px; color:hotpink");
+				if (fs == 40)
+				{
+					clearInterval(var2); 
+					var1 = setInterval(inTimer, 400);
+				}
+			}
+
+		</script> 
+	</div>
+	<section>
+		<div>
+			<h3>Reviews</h3>
+			<p>
+				<strong>Outstanding</strong><br>Joey
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+
+			</p>
+			<p><small>Fantastic photographer,provided top quality photos for an ecommerce site on a tight deadline.</small></p><hr>
+
+			<p>
+				<strong>Informative</strong><br>Rachel
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star star"></span>
+			</p>
+			<p><small>It is an informative webpage</small></p><hr>
+
+			<p>
+				<strong>Great!</strong><br>Ross
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star star"></span>
+				<span class="fa fa-star star"></span>
+			</p>
+			<p><small>I am so glad that I stumbled across this website,I was so pleased with my session and final photographs.</small></p><hr>
+			<p>
+				<strong>Good</strong><br>Ross
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star reviews"></span>
+				<span class="fa fa-star star"></span>
+				<span class="fa fa-star star"></span>
+				<span class="fa fa-star star"></span>
+			</p>
+			<p><small>Nice website</small></p><hr>
+
+
+		</div>
+	</section>
+	<section>
+		<div>
+			<a href="#Home">Privacy policy |</a>
+			<a href="#About">About |</a>
+			<a href="#Where to stay">Disclaimers |</a>
+			<a href="#Travel deals">Mobile view |</a>
+			<a href="videos">Cookie statement</a>
+		</div>
+	</section>
+	<footer><small> Copyright &#169; 2021 @AN phtography. All rights reserved</small></footer>
+</body>
+</html>
