@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/css" href="prog5.css"?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1>STUDENTS DESCRIPTION</h1>
+</head>
+<students>
+<student>
+<USN> USN : 1JT18IS001</USN>
+<name>NAME : Ross</name>
+<college>COLLEGE : JIT</college>
+<branch>BRANCH : Information Science and Engineering</branch>
+<year>YEAR : 2021</year>
+<e-mail>E-Mail : ross@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1JT18IS002 </USN>
+<name>NAME : Joey </name>
+<college>COLLEGE : JIT</college>
+<branch>BRANCH : Digital Film Making</branch>
+<year>YEAR : 2021</year>
+<e-mail>E-Mail : joey@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1JT18IS077</USN>
+<name>NAME : Rachel </name>
+<college>COLLEGE : JIT</college>
+<branch>BRANCH :Electronics and communication</branch>
+<year>YEAR : 2021</year>
+<e-mail>E-Mail : rachel@gmail.com</e-mail>
+</student>
+</students>
+</html>
